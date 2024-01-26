@@ -109,7 +109,7 @@ const Navbar = () => {
                             <>
                                 <NavLink className={activelink} to="/">{account.username}</NavLink>
                                 {/* <NavLink className={activelink} to="/">home</NavLink> */}
-                                <NavLink className={activelink} to='/cart'>
+                                <NavLink className={activelink} to='/cart' onMouseEnter={() => setSidecart(true)}>
                                     cart
                                     <FaShoppingCart onClick={() => setSidecart(!sidecart)} className="cursor-pointer" size={25} />
                                     <p style={{ display: 'inline-block' }}>{cart.length}</p>
